@@ -9,7 +9,6 @@ CREATE TABLE IF NOT EXISTS mahasiswa (
 
 -- MENGISI TABEL MAHASISWA (Password: admin)
 INSERT INTO mahasiswa (mahasiswa_id, mahasiswa_nim, mahasiswa_nama, mahasiswa_email, mahasiswa_password) VALUES
-(3, '24010110126', 'M.syarifudin', 'meydhi@gmail.com', SHA1('admin')),
 (4, '24010110078', 'Sarip', 'sarip@gmail.com', SHA1('admin')),
 (5, '24010110078', 'M.Syarifuddin', 'syarif@gmail.com', SHA1('admin'))
 ON DUPLICATE KEY UPDATE mahasiswa_id=mahasiswa_id;
